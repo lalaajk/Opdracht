@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>outfits inspiration</title>
+    <style>
+      body {
+        background: #ffffff;
+      }
+
+      h1 {
+        color: #000000;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        padding: 15px;
+        border-radius: 4px;
+        border: 1px solid #000000;
+      }
+      h2 {
+        color: #000000;
+        text-align: center;
+        font-weight: lighter;
+      }
+      p {
+        color: #000000;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 15px;
+      }
+      .updated {
+        font-weight: bold;
+      }
+      a {
+        color: #ab62f0;
+        margin-top: 15px;
+        text-decoration: none;
+      }
+      .name {
+        color: #4e4e4e;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto 20px auto;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #000000;
+        background: transparent;
+        border: 1px solid #000000;
+        border-radius: 30px;
+        box-shadow: 2px 2px 5px #ffc0cb;
+        transition: all 200ms ease-in-out;
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 60px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      button:hover {
+        background: #ab62f0;
+        color: #ffffff;
+        cursor: pointer;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Outfits inspiration & idea for women</h1>
+      <h2>outfit inspo pinterest</h2>
+      <hr />
+      <p>
+        Every day is a new canvas to express your unique style and personality
+        through OOTD <br />
+        (Outfit of the Day) inspirations that reflect your mood and creativity.
+        <br />
+        Matching your look is all about harmonizing colors, patterns, and <br />
+        accessories to create a well-balanced and polished outfit that
+        highlights
+        <br />
+        your individual taste and fashion flair.
+      </p>
+
+      <img
+        class="image1"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/598/original/inspo.jpg?1697308208"
+        width="200"
+        alta="image-shift-1"
+      />
+      <img
+        class="image2"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/599/original/outfits_.jpg?1697308284"
+        width="200"
+        alta="image--shift2"
+      />
+      <img
+        class="image3"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/600/original/outfits_inspo.jpg?1697308326"
+        width="200"
+        alta="image---shift3"
+      />
+      <br />
+      <p>
+        For ideas, you can find more inspiration on 👉
+
+        <a
+          href="file:///C:/Users/lalaa/OneDrive/Desktop/html/index.html%20intake.html"
+        >
+          OOTD</a
+        >
+      </p>
+      <p class="updated">
+        If you'd like to stay updated with the latest trends and receive more
+        fashion inspiration in your email, <br />
+        simply click below ⇩
+      </p>
+      <br />
+      <button id="clickButton">Click me</button>
+      <p class="name">Coded by Ladan</p>
+
+      <script>
+        function clickMe() {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email?");
+          let updated = document.querySelector(".updated");
+
+          updated.innerHTML =
+            "Hi " +
+            name +
+            ", Thank you for your trust, we'll keep you updated in your email.";
+        }
+
+        let clickButton = document.getElementById("clickButton");
+        clickButton.addEventListener("click", clickMe);
+      </script>
+    </div>
+  </body>
+</html>
